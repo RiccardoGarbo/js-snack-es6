@@ -76,3 +76,51 @@ const nameStudentsUpCase = students.map(student => {
 console.log(gradesOver70)
 console.log(gradesOver70IdOver120)
 console.log(nameStudentsUpCase)
+
+
+
+
+
+
+
+
+
+//SNACK3
+const racingBikes = [
+    {
+        name: 'Pinarello',
+        peso: 8
+    },
+    {
+        name: 'Specialized',
+        peso: 9
+    },
+    {
+        name: 'Bianchi',
+        peso: 7
+    }
+]
+//Dichiaro una variabile per la bici più leggera e le do un volore iniziale di un oggetto dell'array
+let lighterBike = racingBikes[0]
+//Per ogni oggetto nell'array estrapolo il nome e il peso
+racingBikes.forEach(racingBike => {
+    const { name, peso } = racingBike
+    console.log(name, peso, racingBike)
+    //Condizione per verificare la bici più leggera 
+    if (peso < lighterBike.peso) {
+        lighterBike = racingBike
+    }
+})
+console.log(lighterBike)
+
+
+
+
+
+
+
+
+
+
+
+
