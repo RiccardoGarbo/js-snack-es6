@@ -13,15 +13,13 @@ const guests = ['Brad Pitt',
     'Amal Clooney',
     'Maneskin'
 ];
-const guestsList = []
-for (i = 0; i < guests.length; i++) {
-    guestsList.push({
-        nameTable: tableName,
-        nameGuest: guests[i],
-        place: `${[i]}`
-    })
-}
+const guestsList = guests.map((guest, i) => {
+    return { table: tableName, guest: guest, place: i + 1 }
+})
 console.log(guestsList)
+
+
+
 
 
 //SNACK2
