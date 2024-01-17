@@ -113,6 +113,66 @@ racingBikes.forEach(racingBike => {
 })
 console.log(lighterBike)
 
+//SNACK4
+
+const footballTeams = [
+    {
+        name: 'Juventus',
+        score: 0,
+        fouls: 0
+    },
+    {
+        name: 'Inter',
+        score: 0,
+        fouls: 0
+    },
+    {
+        name: 'Milan',
+        score: 0,
+        fouls: 0
+    },
+    {
+        name: 'Napoli',
+        score: 0,
+        fouls: 0
+    }
+]
+
+function randomNumber(max, min) {
+    return Math.floor(Math.random() * (max - min + 1) + 1)
+
+}
+const footballTeamsInfo = footballTeams.map(team => {
+    return {
+        name: team.name,
+        score: randomNumber(50, 0),
+        fouls: randomNumber(20, 0)
+    }
+})
+console.log(footballTeamsInfo)
+const teamNameFouls = footballTeamsInfo.map(({ name, fouls }) => {
+    return ({ name, fouls })
+})
+console.log(teamNameFouls)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
